@@ -1,0 +1,986 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family:'Montserrat',sans-serif;
+}
+ /* ESTILOS DIMENCIONES MOVILES - CELULARES - TABLET  */
+header{ 
+    border-top:4px solid red;
+    padding: 0 10px;
+    width: 100%;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    min-width: 100px;
+    
+
+    .menu-desplegable{  /* Estilos btn menu desplegable */
+        border: 1px solid rgb(184, 184, 184);
+        border-radius: 30px;
+        padding: 8px 10px;
+      
+    }
+    .menu-desplegable:hover{
+        background-color: #f5f5f5;
+        transition: .4s ease;
+        cursor: pointer;
+    }
+
+    .menu-fondo-black{   /* estilos del contenedor desplegable de Menu - .Menu-desplegable */
+     position: fixed;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     z-index: 10; /* Aparecerá por encima */
+     background: rgba(0, 0, 0, 0.7);
+     display: none;
+        .opciones-menu{
+         position: absolute;
+         z-index: 10;
+         top: 0;
+         left: 0;
+         background-color: white;
+         width: 400px;
+         height: 600px;
+         padding: 25px 0 0 5px;
+     
+            .cerrar-menu{
+             border: 1px solid rgb(184, 184, 184);
+             border-radius: 30px;
+             padding: 8px 12px;
+             text-decoration: none;
+             color: black;
+             margin: 0px 3px;
+      
+            }
+            ul{
+              margin: 25px 10px;
+            
+              li{
+                 list-style: none;
+                 margin-bottom: 40px;
+                   a{
+                     text-decoration: none;
+                     color: rgb(51, 51, 51);
+                     font-weight: 500;
+                    }
+                }
+            }
+        }
+   
+    }
+
+    .logo-img img{   /* Estilos del lOGO del header en dimenciones responsive */
+        align-items: flex-start;
+        max-width: 300px;
+        max-height: 70px;
+    }
+    
+    .iniciar-sesion{  /* Estilos del btn Iniciar Sesion */
+        border: 1px solid rgb(184, 184, 184);
+        border-radius: 30px;
+        padding: 8px 10px;
+        
+    }
+    .iniciar-sesion:hover{
+        background-color: #f5f5f5;
+        transition: .4s ease;
+        cursor: pointer;
+    }
+    .iniciar-sesion-fondo-black{   /* Estilos del contenedor desplegable de Iniciar Sesion  */
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 10; /* Aparecerá por encima */
+        background: rgba(0, 0, 0, 0.7);
+        display: none;
+        .cont-iniciar-sesion{
+            position: absolute;
+            z-index: 10;
+            top: 0;
+            right: 0;
+            background-color: white;
+            width: 400px;
+            height: 600px;
+            padding: 20px 10px;
+
+            .cont-cerrar{ /* contenedor cerrar ventana emergente*/
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+                
+                a{
+                    border: 1px solid rgb(184, 184, 184);
+                    border-radius: 30px;
+                    padding: 8px 12px;   
+                    text-decoration: none;
+                    color: black;
+                    cursor: pointer;
+                }
+                a:hover{
+                    background-color: #f5f5f5;
+                    transition: .4s ease;   
+                }
+            } 
+
+            .section-iniciar-sesion h5{
+              margin: auto;
+              padding-left: 13px;
+              color: gray;
+            }
+
+       
+            .section-iniciar-sesion .cont-btn{ /* Boton de Iniciar Sesion del contenedor desplegable -  inciar sesion */
+                
+                margin:50px 10px 0 10px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                
+                button{
+                    cursor: pointer;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 15px 120px;
+                    border: 1px solid blue;
+                    color: blue;
+                    background-color: white;
+                    font-weight: bold;
+                    border-radius: 5px;
+                    
+                }
+                button:hover{
+                    background-color: rgb(183, 183, 235);
+                    transition: .4s ease;
+                }
+            }  
+        }
+    }
+
+    /*estilos para web con display none*/
+
+    .logo-cont{
+        display: none;
+    }
+    .nav-header-web{
+        display: none;
+    }
+    .cont-iniciar-cuenta{
+        display: none;
+    }
+}
+
+main{
+    /* Contenedor uno del main */
+    /* Contenedor de background-img y formulario de busqueda */
+    .caja-descriptiva-1{
+      background-image:url(Imagenes/Img/background-img.jpg);
+      max-width: 1400px;
+      width: auto;
+      height: 300px;
+      background-position: center center;
+      background-size: cover;
+
+       .contenedor-titulo{
+            padding-top: 30px;
+            .titulo-img{
+             display: flex;
+             justify-content: center;
+             align-items: center;
+             color: white;
+             font-size: 30px;
+            
+            }
+        }
+        .caja-btn-formul{
+            min-width:100px;
+            max-width: 1400px;
+            width: auto;
+            padding: 2px;
+            position: relative;
+            top:72px;
+            left:0px;
+            z-index: 5; /* Aparecerá por debajo */
+
+            .comprar-alquilar-vender{
+                display: flex;
+                justify-content: center;
+                align-items: center;  
+                margin-bottom: 15px;
+                .comprar{
+                    padding: 15px 44px;
+                    background-color: rgb(65, 65, 241); 
+                    color: white;
+                    font-weight: bold;
+                    border-top-left-radius: 8px;
+                    border-bottom-left-radius: 8px;
+                    cursor: pointer;
+                }
+                .comprar:hover{
+                    background-color: rgb(45, 45, 250);
+                    transition: .5s ease;
+                }
+                .alquilar , .vender{
+                    padding: 15px 44px;
+                    background-color: white;
+                    font-weight: bold;
+                    color: grey;
+                    cursor: pointer;
+                }
+                .vender{
+                    border-top-right-radius: 8px;
+                    border-bottom-right-radius: 8px;
+                    cursor: pointer;
+                    border-left: 1px solid gray;
+                }
+                .emprendimiento-web{
+                    display: none;
+                }
+            }
+            
+            .cont-emprendimientos-responsive{
+                display: flex;
+                justify-content: center;
+                align-items: center; 
+                .emprendimiento{
+                    margin-top: 10px;
+                    margin-bottom: 10px;
+                    padding: 15px 157px; 
+                    font-weight: bold;
+                    border-radius: 8px;
+                    color: grey; 
+                    background-color: white;
+                    cursor: pointer;
+                }
+            } 
+            .boton-busqueda {
+                display: flex;
+                justify-content: center;
+                align-items: center; 
+                .input-buscar{
+                    padding: 15px 115px;
+                    border: 1px solid grey;
+                    border-radius: 0;
+                    border-top-left-radius: 8px;
+                    border-bottom-left-radius: 8px;
+                }
+                .input-buscar:focus{
+                    outline: none;
+                }
+                
+                .fa-magnifying-glass{
+                    background-color:rgb(71, 71, 243);
+                    padding: 15px 29px;
+                    border: 1px solid rgb(71, 71, 243);
+                    border-top-right-radius: 8px;
+                    border-bottom-right-radius: 8px;
+                    color: white;
+                    cursor: pointer;
+                }
+                .fa-magnifying-glass:hover{
+                    background-color: rgb(45, 45, 250);
+                    transition: .5s ease;
+                }
+                .cont-select-recomendados{
+                    display: none;
+                }
+
+            }
+        }
+    }
+
+
+    /* Contenedor dos del main */
+    /* Contenedor de background-img y text descriptivo con btn */
+    .cont-info-propiedades{
+      min-width:100px;
+      max-width: 1400px;
+      width: auto;
+      height: 250px;
+      margin: 50px 30px ;
+      background-image: url(Imagenes/Img/estacado-colores-para-departsmento-2.jpg);
+      background-position: center center;
+      background-size: cover;
+      margin-bottom: 100px;
+        .text-sobre-remax {
+            margin: auto;
+            position: relative;
+            background-color: white;
+            top: 155px;
+            width: 400px;
+            max-height: 300px;
+            padding: 20px;
+            border: 1px solid gainsboro;
+            border-radius: 6px;
+            .img-cont-3{
+                display: flex;
+                justify-content: center;
+                
+                img{
+                    width: 250px;
+                }
+            }
+            .parrafo-cont-3{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding-bottom: 10px;
+                p{
+                   
+                    text-align: center;
+                    font-size: 14px;
+     
+                   
+                }
+                
+            } 
+            .boton-cont-3{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                .boton{
+                    cursor: pointer;
+                    margin-top: 15px;
+                    margin-bottom: 15px;
+                    background-color: rgb(65, 65, 241);
+                    padding: 15px 30px;
+                    color: white;
+                    font-weight: bold;
+                    border-radius: 8px;
+                }
+                .boton:hover{
+                    background-color:rgb(45, 45, 250);
+                    transition: .5s ease;
+                }
+            }
+        }
+    }
+    .contenedor-4-main{
+        margin: 250px 30px 250px 30px ;
+        background-image: url(Imagenes/Img/depto-gris.jpg);
+        background-position: center center;
+        background-size: cover;
+        border-radius: 6px;      
+        height: 250px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        /* ESTILOS ENTRE CAJAS DIMENCIONES DE TABLET Y WEB */
+        @media screen and (min-width: 700px) {
+         
+           margin-bottom: 300px;  
+        }
+        .text-sobre-remax{
+            margin: auto;
+            position: relative;
+            background-color: white;
+            top: 135px;
+            width: 400px;
+            padding: 30px;
+            border: 1px solid gainsboro;
+            border-radius: 6px;
+
+            .img-cont-4{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                .img-4{
+                    max-width: 300px;
+                  
+                }
+
+            }
+            
+
+            .parrafo-cont-4{
+             
+                .h4-parra-cont-4{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin-bottom: 15px;
+                    
+                }
+                .p{ font-size: 14px;
+                   text-align: center;
+
+                }
+                
+            }
+
+            .boton-cont-4{
+                display: flex;
+                align-content: center;
+                justify-content: center;
+                
+                .boton{
+                    cursor: pointer;
+                    margin-top: 20px;
+                    background-color: rgb(65, 65, 241);
+                    padding: 15px 30px;
+                    color: white;
+                    font-weight: bold;
+                    border-radius: 8px;
+                }
+                .boton:hover{
+                    background-color:rgb(45, 45, 250);
+                    transition: .5s ease;
+                }
+            }
+        }
+    }
+    
+    .franquicias{
+        min-width: 440px;
+        .cont-img{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 252px;
+           .img{
+             min-width: 440px;
+             width: auto;
+           }
+        }
+                
+        
+        .text-sobre-remax{
+            margin: auto;
+            position: relative;
+            background-color: white;
+            border-radius: 5px;
+            border: 1px solid gainsboro;
+            padding: 30px;
+
+            .parrafo-cont-5{
+             
+                .h4-parra-cont-5{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin-bottom: 15px;
+                    
+                }
+                .p{ font-size: 14px;
+                   text-align: center;
+
+                }
+                
+            }
+
+            .boton-cont-5{
+                display: flex;
+                align-content: center;
+                justify-content: center;
+                
+                .boton{
+                    cursor: pointer;
+                    margin-top: 15px;
+                    background-color:rgb(65, 65, 241);
+                    padding: 15px 30px;
+                    color: white;
+                    font-weight: bold;
+                    border-radius: 8px;
+                }
+                .boton:hover{
+                    background-color:rgb(45, 45, 250);
+                    transition: .5s ease;
+                }
+            }
+
+        }
+        
+    }
+    .unite-a-remax{
+        min-width: 440px;
+        .cont-img{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 252px;
+            
+            .img{
+                min-width: 440px;
+                width: auto;
+            }
+                
+        }
+        .text-sobre-remax{
+            margin: auto;
+            position: relative;
+            background-color: white;
+            border: 1px solid gainsboro;
+            border-radius: 5px;
+            padding: 20px;
+
+            .parrafo-cont-5{
+             
+                .h4-parra-cont-5{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin-bottom: 15px;
+                    
+                }
+                .p{ font-size: 14px;
+                   text-align: center;
+
+                }
+                
+            }
+
+            .boton-cont-5{
+                display: flex;
+                align-content: center;
+                justify-content: center;
+                
+                .boton{
+                    margin-top: 15px;
+                    background-color: rgb(65, 65, 241);
+                    padding: 15px 30px;
+                    color: white;
+                    font-weight: bold;
+                    border-radius: 8px;
+                    cursor: pointer;
+                }
+                .boton:hover{
+                    background-color:rgb(45, 45, 250);
+                    transition: .5s ease;
+                }
+            }
+
+        }
+        
+    }
+}
+
+footer{
+    div .globo-remax{
+        width: 100px;
+        margin: 15px 0 15px 0;
+    }
+    .contenedor-footer{
+      margin: auto;
+    }
+
+    .comprar-vender-alquilar{
+        width: 250px;
+        padding: 10px;
+       
+        .a-titulo{
+            text-decoration: none;
+            color: black;
+            margin: 25px;
+            font-weight: bold;
+        }
+        .li-comprar-vender-alquilar{
+            list-style: none;
+            .a{ display: flex;
+                justify-content:start;
+                text-decoration: none;
+                margin: 5px 25px;
+                color: grey;
+                cursor: pointer;
+
+            }
+            .a:hover{
+                color: rgb(19, 19, 19);
+            }
+        }
+    }
+
+    .ubicacion-comprar{
+        padding: 10px;
+        border-top: 1px solid gainsboro;
+        width: 250px;
+        .a-titulo{
+            text-decoration: none;
+            color: black;
+            margin: 25px;
+            font-weight: bold;
+        }
+        .li-ubicacion-comprar{
+            list-style: none;
+            .a{
+                display: flex;
+                justify-content:start;
+                text-decoration: none;
+                margin: 5px 25px;
+                color: grey;
+                cursor: pointer;
+            }
+            .a:hover{
+                color: black;
+                
+            }
+            .ver-mas{
+                margin:10px 0 0 25px ;
+                color: black;
+                cursor: pointer;
+                text-decoration: none;  
+                font-weight: bold;
+            }
+            .ver-menos{
+                margin:12px 0 0 25px ;
+                color: black;
+                cursor: pointer;
+                text-decoration: none;
+                font-weight: bold;
+                .fa-chevron-down{
+                    margin-top:10px ;
+                }
+            }
+        }
+        .ubicacion-2{ /* cont desplegable Ver Mas ubicaciones */
+            display:none;
+        }
+    }
+    .ubicacion-alquilar{
+        border-top: 1px solid gainsboro;
+        padding: 10px;
+        width: 250px;
+        .a-titulo{
+            text-decoration: none;
+            color: black;
+            margin: 25px;
+            font-weight: bold;
+        }
+        .li-alquilar{
+            list-style: none;
+            .a{
+                display: flex;
+                justify-content:start;
+                text-decoration: none;
+                margin: 5px 25px;
+                color: grey;
+                cursor: pointer;
+            }
+            .a:hover{
+                color: rgb(0, 0, 0);
+            }
+            .ver-mas{
+                margin:10px 0 0 25px ;
+                color: black;
+                cursor: pointer;
+                text-decoration: none;  
+                font-weight: bold;
+            }
+            .ver-menos{
+                margin:10px 0 0 25px ;
+                color: black;
+                cursor: pointer;
+                text-decoration: none;
+                font-weight: bold;
+            }
+        }
+        .alquilar-2{
+            display: none;
+        }
+    }
+    .encontra-mas{
+        padding: 10px;
+        border-top: 1px solid gainsboro;
+        width: 250px;
+        .a-titulo{
+            text-decoration: none;
+            color: black;
+            margin: 25px;
+            font-weight: bold;
+        }
+        .li-propiedades{
+            list-style: none;
+            .a{
+                display: flex;
+                justify-content:start;
+                text-decoration: none;
+                margin: 5px 25px;
+                color: grey;
+                cursor: pointer;
+            }
+            .a:hover{
+                color: black;
+            }
+            .ver-mas{
+                margin:10px 0 0 25px ;
+                color: black;
+                cursor: pointer;
+                text-decoration: none;  
+                font-weight: bold;
+            }
+            .ver-menos{
+                margin:10px 0 0 25px ;
+                color: black;
+                cursor: pointer;
+                text-decoration: none;
+                font-weight: bold;
+            }
+        }
+        .propiedades-2{
+            display: none;
+        }
+    }
+ 
+}
+.cont-contactos{
+    border-top: 1px solid rgb(185, 185, 185);
+    padding: 25px 10px 0 10px;
+    margin-left:20px;
+    width: auto;
+    .a-titulo{
+     color: rgb(59, 59, 59);
+     text-decoration: none;
+     font-weight: bold;
+     
+    }
+    .li-contactos{
+        list-style: none;
+        height: 50px;
+        margin-bottom: 10px;
+       img{
+        margin-top: 15px;
+        width: 30px;
+        margin-right: 15px;
+        cursor: pointer;
+        padding: 5px;
+       }
+       img:hover{
+        width: 33px;
+        transition: .3s ease;
+        background-color: rgb(219, 219, 219);
+        border-radius: 3px;
+       }
+    }
+}
+
+
+@media screen and (min-width:1200px) {
+  
+    header {
+        padding:0 30px;
+        .menu-desplegable{
+            display: none;
+        }
+        .logo-img{
+            display: none;   
+        } 
+        .iniciar-sesion{
+            display: none;
+        }
+   
+        .logo-cont{
+           display: block;
+           cursor: pointer;
+            img{
+             max-width: 300px;
+             max-height: 70px;
+                       
+            }
+        }
+        .nav-header-web{
+            display: block;
+            cursor: pointer;
+            ul{
+                display: flex;
+                gap: 15px;
+                li{
+                    list-style: none;
+                    a{
+                        text-decoration: none;
+                        color: rgb(54, 54, 54);
+                        font-weight: 600;
+                    }
+                    a:hover{
+                        color: blue;
+                    }
+                    .home-nav{
+                        color: blue;
+                        border-bottom: 1px solid blue;
+                        padding-bottom: 8px;
+                    }
+                }
+            }
+        }  
+        .cont-iniciar-cuenta{
+            display: block;
+            cursor: pointer;
+            border:1px solid rgb(65, 65, 241);
+            border-radius: 5px;
+            padding: 10px;
+            a{
+               font-weight: bold;
+               color: rgb(65, 65, 241);
+            }
+
+        }
+        .cont-iniciar-cuenta:hover{
+            background-color: rgb(220, 220, 241);
+            transition: .5s ease;
+        }
+    }
+
+    main {
+        .caja-descriptiva-1 .contenedor-titulo .titulo-img{
+            font-size: 30px;
+        }
+        .caja-descriptiva-1 .caja-btn-formul{
+            top:35px;
+            left: 0;
+            .comprar-alquilar-vender{
+                gap: 10px;
+                
+                .comprar::before {
+                  content: "Quiero ";
+                }
+                .alquilar::before {
+                 content: "Quiero ";
+                }
+                .vender::before {
+                 content: "Quiero ";
+                }
+                .comprar ,.vender , .alquilar{
+                   border-radius: 8px;
+                }
+                .emprendimiento-web{
+                 border-radius: 8px;
+                 padding: 15px 44px;
+                 background-color: white;
+                 font-weight: bold;
+                 color: grey;
+                 display: block;
+                 cursor: pointer;
+                }
+            }
+            .cont-emprendimientos-responsive{
+                display: none;
+            }
+            .boton-busqueda {
+                .input-buscar{
+                    padding: 15px 187px;
+                }
+                .cont-select-recomendados{
+                    display: block;
+                    .select-recomendados{
+                        padding: 14px 29px;
+                        cursor: pointer;
+                    }
+                    .select-recomendados:focus{
+                        outline: none;
+                    }
+                }
+                .fa-magnifying-glass{
+                    padding: 14px 60px;
+                }
+            }  
+        }
+
+        .contenedor-4-main{
+            margin-bottom: 280px;
+        }
+       
+        .contenedor-5-main .franquicias {
+            height: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #e6e9f7;
+            margin: 0 30px 130px;
+            border-radius: 5px;
+            
+
+            .cont-img .img{
+                border-radius: 5px;
+                height: 400px;
+                max-width: 710px;
+                
+            }
+            
+            .text-sobre-remax{
+                height: 250px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: relative;
+                right: 100px;
+                top: 0;
+            }
+
+        }
+        .contenedor-5-main .unite-a-remax{
+            height: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #e6e9f7;
+            margin: 0 30px 130px;
+            border-radius: 5px;
+            flex-direction: row-reverse;
+      
+            .cont-img   .img{
+                border-radius: 5px;
+                height: 400px;
+                max-width: 710px;
+             
+
+            }
+              
+                
+            
+            .text-sobre-remax{
+                height: 250px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: relative;
+                left: 100px;
+                top: 0;
+                
+            }
+        }
+
+
+    }
+    footer{
+        border-top: 1px solid rgb(185, 185, 185);
+        padding-top: 10px;
+        div img{
+            margin-left: 0;
+        }
+        div{
+         display: flex;
+         margin-bottom: 20px;
+     
+        }
+        .contenedor-footer{
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+
+            .comprar-vender-alquilar , .ubicacion-comprar , .ubicacion-alquilar , .encontra-mas{
+                border-top: none;
+                width: 350px;
+            }
+        }
+        
+        .cont-contactos{
+            padding-top:25px ;
+            .li-contactos{
+                margin-bottom: 0;
+            }
+        } 
+        
+    }
+
+}
+
+    
+
+
+
