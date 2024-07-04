@@ -5,6 +5,9 @@
     border: 0;
     font-family:'Montserrat',sans-serif;
 }
+body{
+    max-width: 320px;
+}
  /* ESTILOS DIMENCIONES MOVILES - CELULARES - TABLET  */
 header{ 
     border-top:4px solid red;
@@ -496,7 +499,7 @@ main{
         
     }
     .unite-a-remax{
-        min-width: 320px;
+ 
         .cont-img{
             display: flex;
             justify-content: center;
