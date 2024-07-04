@@ -311,10 +311,9 @@ main{
             margin: auto;
             position: relative;
             background-color: white;
-            top: 155px;
+            top: 135px;
             width: 250px;
-            max-height: 300px;
-            padding: 20px;
+            padding: 30px;
             border: 1px solid gainsboro;
             border-radius: 6px;
             .img-cont-3{
@@ -322,7 +321,7 @@ main{
                 justify-content: center;
                 
                 img{
-                    width: 250px;
+                    width: 200px;
                 }
             }
             .parrafo-cont-3{
@@ -569,7 +568,7 @@ footer{
     }
 
     .comprar-vender-alquilar{
-        width: 250px;
+        width: 320px;
         padding: 10px;
        
         .a-titulo{
@@ -597,7 +596,7 @@ footer{
     .ubicacion-comprar{
         padding: 10px;
         border-top: 1px solid gainsboro;
-        width: 250px;
+        width: 320px;
         .a-titulo{
             text-decoration: none;
             color: black;
@@ -643,7 +642,7 @@ footer{
     .ubicacion-alquilar{
         border-top: 1px solid gainsboro;
         padding: 10px;
-        width: 250px;
+        width: 320px;
         .a-titulo{
             text-decoration: none;
             color: black;
@@ -685,7 +684,7 @@ footer{
     .encontra-mas{
         padding: 10px;
         border-top: 1px solid gainsboro;
-        width: 250px;
+        width: 320px;
         .a-titulo{
             text-decoration: none;
             color: black;
@@ -825,10 +824,11 @@ footer{
 
     main {
         .caja-descriptiva-1 .contenedor-titulo .titulo-img{
-            font-size: 30px;
+            font-size: 35px;
+            margin:20px 0 0 ;
         }
         .caja-descriptiva-1 .caja-btn-formul{
-            top:35px;
+            top:55px;
             left: 0;
             .comprar-alquilar-vender{
                 gap: 10px;
@@ -877,7 +877,9 @@ footer{
                 }
             }  
         }
-
+        .cont-info-propiedades .text-sobre-remax{
+            width: 400px;
+        }
         .contenedor-4-main{
             margin-bottom: 280px;
         }
