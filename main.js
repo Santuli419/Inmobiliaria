@@ -19,14 +19,6 @@ toggleContenedor('.cont-emergente' , '.abrir' , '.cerrar-menu');
 toggleContenedor('.iniciar-sesion-fondo-black','.iniciar-sesion' , '.cont-cerrar');
 
 
-
-
-
-
-
-
-
-
 // Función para gestionar el clic en "Ver más" y "Ver menos"
 function setupToggle(toggleContainer, verMasClass, verMenosClass, contentClass) {
     // Selecciona los elementos relevantes dentro del contenedor dado
