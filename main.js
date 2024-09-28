@@ -17,6 +17,8 @@ function toggleContenedor(contenedor , abrir , cerrar){
 }
 toggleContenedor('.cont-emergente' , '.abrir' , '.cerrar-menu');
 toggleContenedor('.iniciar-sesion-fondo-black','.iniciar-sesion' , '.cont-cerrar');
+toggleContenedor('.iniciar-sesion-fondo-black','.cont-iniciar-cuenta' , '.cont-cerrar');
+
 
 
 // Función para gestionar el clic en "Ver más" y "Ver menos"
