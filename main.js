@@ -50,3 +50,24 @@ document.addEventListener('DOMContentLoaded', function() {
     setupToggle(document.querySelector('.propiedades'), '.ver-mas', '.ver-menos', '.propiedades-2');
 });
 
+
+
+// Selecciona todos los elementos que quieres animar
+const elements = document.querySelectorAll('.text-sobre-remax, .text-sobre');
+
+function animateOnScroll() {
+  elements.forEach(element => {
+    const position = element.getBoundingClientRect().top;
+    const screenHeight = window.innerHeight;
+
+    // Si el elemento está visible en la pantalla, agrega la clase de animación
+    if (position < screenHeight) {
+      element.classList.add('active'); // Clase que activa la animación
+    }
+  });
+}
+
+// Ejecuta la función cuando se hace scroll
+window.addEventListener('scroll', animateOnScroll);
+
+

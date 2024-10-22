@@ -216,6 +216,12 @@ main{
                 justify-content: center;
                 align-items: center;  
                 margin-bottom: 15px;
+              
+                .btn-banner:hover{
+                    background-color: rgb(45, 45, 250);
+                    transition: .5s ease;
+                    color: white;
+                }
                 .comprar{
                     padding: 15px 18px;
                     background-color: rgb(65, 65, 241); 
@@ -300,145 +306,162 @@ main{
 
     /* Contenedor dos del main */
     /* Contenedor de background-img y text descriptivo con btn */
-    .cont-info-propiedades{
-      min-width:100px;
-      max-width: 1400px;
-      width: auto;
-      height: 250px;
-      margin: 50px 30px ;
-      background-image: url(Imagenes/Img/estacado-colores-para-departsmento-2.jpg);
-      background-position: center center;
-      background-size: cover;
-      margin-bottom: 100px;
-        .text-sobre-remax {
-            margin: auto;
-            position: relative;
-            background-color: white;
-            top: 135px;
-            width: auto;
-            padding: 30px;
-            border: 1px solid gainsboro;
-            border-radius: 6px;
-            .img-cont-3{
-                display: flex;
-                justify-content: center;
-                
-                img{
-                    width: 200px;
-                }
-            }
-            .parrafo-cont-3{
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                padding-bottom: 10px;
-                p{
-                   
-                    text-align: center;
-                    font-size: 14px;
-     
-                   
-                }
-                
-            } 
-            .boton-cont-3{
-                display: flex;
-                justify-content: center;
-                align-items: center;
-
-                .boton{
-                    cursor: pointer;
-                   margin: 15px 0 15px;
-                    background-color: rgb(65, 65, 241);
-                    padding: 15px 30px;
-                    color: white;
-                    font-weight: bold;
-                    border-radius: 8px;
-                    border: none;
-                }
-                .boton:hover{
-                    background-color:rgb(45, 45, 250);
-                    transition: .5s ease;
-                }
-            }
-        }
-    }
-    .contenedor-4-main{
-        margin: 250px 30px 290px 30px ;
+    .cont-info-propiedades {
+        min-width: 100px;
+        max-width: 1400px;
+        width: auto;
+        height: 300px;
+        margin: 50px 30px;
+        background-image: url(Imagenes/Img/estacado-colores-para-departsmento-2.jpg);
+        background-position: center center;
+        background-size: cover;
+        margin-bottom: 100px;
+      }
+      
+      .text-sobre-remax {
+        margin: auto;
+        position: relative;
+        background-color: white;
+        top: 135px;
+        width: auto;
+        padding: 30px;
+        border: 1px solid gainsboro;
+        border-radius: 6px;
+        opacity: 0;
+        transform: translateY(0);
+        transition: transform 1s ease, opacity 1s ease;
+      }
+      
+      .text-sobre-remax.active {
+        opacity: 1;
+        transform: translateY(30px);
+      }
+      
+      .img-cont-3 {
+        display: flex;
+        justify-content: center;
+      }
+      
+      .img-cont-3 img {
+        width: 200px;
+      }
+      
+      .parrafo-cont-3 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 10px;
+      }
+      
+      .parrafo-cont-3 p {
+        text-align: center;
+        font-size: 14px;
+      }
+      
+      .boton-cont-3 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      
+      .boton {
+        cursor: pointer;
+        margin: 15px 0;
+        background-color: rgb(65, 65, 241);
+        padding: 15px 30px;
+        color: white;
+        font-weight: bold;
+        border-radius: 8px;
+        border: none;
+      }
+      
+      .boton:hover {
+        background-color: rgb(45, 45, 250);
+        transition: 0.5s ease;
+      }
+      
+      /* Reglas para .contenedor-4-main */
+      .contenedor-4-main {
+        margin: 250px 30px 290px 30px;
         background-image: url(Imagenes/Img/depto-gris.jpg);
         background-position: center center;
         background-size: cover;
-        border-radius: 6px;      
+        border-radius: 6px;
         height: 250px;
-        min-width:100px;
+        min-width: 100px;
         max-width: 1400px;
-        
-        
-        /* ESTILOS ENTRE CAJAS DIMENCIONES DE TABLET Y WEB */
-        @media screen and (min-width: 420px) {
-         
-           margin-bottom: 200px;  
+      }
+      
+      @media screen and (min-width: 420px) {
+        .contenedor-4-main {
+          margin-bottom: 200px;
         }
-        .text-sobre-remax{
-            margin: auto;
-            position: relative;
-            background-color: white;
-            top: 135px;
-            width: auto;
-            padding: 30px;
-            border: 1px solid gainsboro;
-            border-radius: 6px;
-
-            .img-cont-4{
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                .img-4{
-                    max-width: 300px;
-                  
-                }
-
-            }
-            
-
-            .parrafo-cont-4{
-             
-                .h4-parra-cont-4{
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    margin-bottom: 15px;
-                    
-                }
-                .p{ font-size: 14px;
-                   text-align: center;
-
-                }
-                
-            }
-
-            .boton-cont-4{
-                display: flex;
-                align-content: center;
-                justify-content: center;
-                
-                .boton{
-                    cursor: pointer;
-                    margin-top: 20px;
-                    background-color: rgb(65, 65, 241);
-                    padding: 15px 30px;
-                    color: white;
-                    font-weight: bold;
-                    border-radius: 8px;
-                    border: none;
-                }
-                .boton:hover{
-                    background-color:rgb(45, 45, 250);
-                    transition: .5s ease;
-                }
-            }
-        }
-    }
+      }
+      
+      .text-sobre{
+        margin: auto;
+        position: relative;
+        background-color: white;
+        top: 115px;
+        width: 650px;
+        padding: 30px;
+        border: 1px solid gainsboro;
+        border-radius: 6px;
+        opacity: 1;
+        transform: translateY(0);
+        transition: transform 1s ease, opacity 1s ease;
+        box-shadow: 2px 2px 16px 6px rgba(128, 128, 128, 0.212);
+      }
+      .text-sobre.active {
+        opacity: 1;
+        transform: translateY(30px);
+      }
+      .img-cont-4 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      
+      .img-4 {
+        max-width: 300px;
+      }
+      
+      .parrafo-cont-4 .h4-parra-cont-4 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 15px;
+      }
+      
+      .parrafo-cont-4 p {
+        font-size: 14px;
+        text-align: center;
+      }
+      
+      .boton-cont-4 {
+        display: flex;
+        align-content: center;
+        justify-content: center;
+      }
+      
+      .boton {
+        cursor: pointer;
+        margin-top: 20px;
+        background-color: rgb(65, 65, 241);
+        padding: 15px 30px;
+        color: white;
+        font-weight: bold;
+        border-radius: 8px;
+        border: none;
+      }
+      
+      .boton:hover {
+        background-color: rgb(45, 45, 250);
+        transition: 0.5s ease;
+      }
+      
+      
+      
    
     .contenedor-5-main .unite-a-remax , .franquicias{
         margin: auto;
@@ -452,13 +475,16 @@ main{
                 width: auto;
             }        
         }
-        .text-sobre-remax{
+        .text-sobre-remax-tres{
             margin: auto;
             background-color: white;
             border: 1px solid gainsboro;
             border-radius: 5px;
             padding: 20px;
-
+            z-index: 800;
+            position: relative;
+            right: 70px;
+            box-shadow: 2px 2px 16px 6px rgba(128, 128, 128, 0.212);
             .parrafo-cont-5{
              
                 .h4-parra-cont-5{
@@ -497,7 +523,54 @@ main{
             }
 
         }
-        
+        .text-sobre-remax-cuatro{
+            margin: auto;
+            background-color: white;
+            border: 1px solid gainsboro;
+            border-radius: 5px;
+            padding: 20px;
+            z-index: 800;
+            position: relative;
+            left: 70px;
+            box-shadow: 2px 2px 16px 6px rgba(128, 128, 128, 0.212);
+            .parrafo-cont-5{
+             
+                .h4-parra-cont-5{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin-bottom: 15px;
+                    
+                }
+                .p{ font-size: 14px;
+                   text-align: center;
+
+                }
+                
+            }
+
+            .boton-cont-5{
+                display: flex;
+                align-content: center;
+                justify-content: center;
+                
+                .boton{
+                    margin-top: 15px;
+                    background-color: rgb(65, 65, 241);
+                    padding: 15px 30px;
+                    color: white;
+                    font-weight: bold;
+                    border-radius: 8px;
+                    cursor: pointer;
+                    border: none;
+                }
+                .boton:hover{
+                    background-color:rgb(45, 45, 250);
+                    transition: .5s ease;
+                }
+            }
+
+        }
     }
 }
 
@@ -709,7 +782,7 @@ footer{
         }
         .contenedor-4-main .text-sobre-remax{
             min-width: 300px;
-            max-width: 450px;
+            max-width: 500px;
             width: auto;
         }
 
