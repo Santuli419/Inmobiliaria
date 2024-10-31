@@ -343,7 +343,8 @@ main{
       }
       
       .img-cont-3 img {
-        width: 200px;
+        width: 180px;
+        height: 160px;
       }
       
       .parrafo-cont-3 {
@@ -833,8 +834,8 @@ footer{
            display: block;
            cursor: pointer;
             img{
-             max-width: 300px;
-             max-height: 70px;
+             max-width: 400px;
+             max-height: 95px;
                        
             }
         }
