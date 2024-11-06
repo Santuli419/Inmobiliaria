@@ -330,6 +330,7 @@ main{
         opacity: 0;
         transform: translateY(0);
         transition: transform 1s ease, opacity 1s ease;
+        box-shadow: 2px 2px 16px 6px rgba(128, 128, 128, 0.212);
       }
       
       .text-sobre-remax.active {
@@ -383,7 +384,7 @@ main{
       
       /* Reglas para .contenedor-4-main */
       .contenedor-4-main {
-        margin: 250px 30px 290px 30px;
+        margin: 290px 30px 290px 30px;
         background-image: url(Imagenes/Img/depto-gris.jpg);
         background-position: center center;
         background-size: cover;
@@ -396,6 +397,11 @@ main{
       @media screen and (min-width: 420px) {
         .contenedor-4-main {
           margin-bottom: 200px;
+            .text-sobre{
+             min-width: 300px;
+             max-width: 500px;
+             width: auto;
+            }
         }
       }
       
@@ -781,20 +787,18 @@ footer{
             max-width: 450px;
             width: auto;
         }
-        .contenedor-4-main .text-sobre-remax{
-            min-width: 300px;
-            max-width: 500px;
-            width: auto;
-        }
 
         .contenedor-5-main{
-        
+            display: grid;
+            gap: 50px;
             .franquicias{
                 min-width: 300px;
                 max-width: 450px;
                 width: auto;
-                .text-sobre-remax{
-                    width: auto 
+                .text-sobre-remax-tres{
+                    right:0;
+                    min-width: 300px;
+                    max-width: 500px;
                 }
             }
            
@@ -802,8 +806,10 @@ footer{
                 min-width: 300px;
                 max-width: 450px;
                 width: auto;
-                .text-sobre-remax{
-                    width: auto 
+                .text-sobre-remax-cuatro{
+                    left: 0;
+                    min-width: 300px;
+                    max-width: 500px;
                 }
             }
         }
